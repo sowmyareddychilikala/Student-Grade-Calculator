@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Heading -->
+        <header>
+            <h1>🎓 Student Grade Calculator</h1>
+            <p>Calculate Total, Percentage, Average & Grade Instantly</p>
+        </header>
+
+        <!-- Calculator Card -->
+        <div class="card">
+
+            <!-- Student Details -->
+            <div class="section">
+
+                <h2>Student Information</h2>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label>Student Name</label>
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Enter Student Name">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Roll Number</label>
+                        <input
+                            type="text"
+                            id="rollNumber"
+                            placeholder="Enter Roll Number">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Marks -->
+            <div class="section">
+
+                <h2>Subject Marks</h2>
+
+                <div class="marks-grid">
+
+                    <div class="input-box">
+                        <label>Mathematics</label>
+                        <input type="number" id="sub1" min="0" max="100" placeholder="0 - 100">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Science</label>
+                        <input type="number" id="sub2" min="0" max="100" placeholder="0 - 100">
+                    </div>
+
+                    <div class="input-box">
+                        <label>English</label>
+                        <input type="number" id="sub3" min="0" max="100" placeholder="0 - 100">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Social Studies</label>
+                        <input type="number" id="sub4" min="0" max="100" placeholder="0 - 100">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Computer Science</label>
+                        <input type="number" id="sub5" min="0" max="100" placeholder="0 - 100">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+
+                <button id="calculateBtn">
+                    Calculate Result
+                </button>
+
+                <button id="resetBtn">
+                    Reset
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Result Card -->
+        <div class="result-card" id="resultCard">
+
+            <h2>Result</h2>
+
+            <div class="result-item">
+                <span>Total Marks</span>
+                <strong id="totalMarks">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Average</span>
+                <strong id="averageMarks">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Percentage</span>
+                <strong id="percentage">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Grade</span>
+                <strong id="grade">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Status</span>
+                <strong id="status">-</strong>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
